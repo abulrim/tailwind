@@ -1,0 +1,76 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-bottom: 22px;
+  position: relative;
+  max-height: 100%;
+  background-color: #FFF;
+  border: solid .5px #C7D7D7;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+  transition: all .2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+  }
+}
+
+.box__header {
+  height: $box-header-height;
+  padding-left: $global--box-padding-left;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+
+  &::before {
+    content: '';
+    margin-right: 7px;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.box__title {
+  font-weight: bold;
+  font-size: 16px;
+  color: $action-normal;
+
+  &_color_dark {
+    color: #5C5050;
+  }
+}
+
+.box__header-left {
+  flex: 1;
+}
+
+.box__action {
+  background: none;
+  border: 0;
+  padding: 0;
+  user-select: none;
+  outline: none;
+  cursor: pointer;
+  color: inherit;
+  height: 100%;
+  width: 50px;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &_type_refresh {
+    background-size: 10px 10px;
+    background-image: url('/assets/images/icons/reload.svg');
+
+    &:hover {
+      background-image: url('/assets/images/icons/reload-green.svg');
+    }
+
+    &::after {
+      content: '';
+      background-image: url('/assets/images/icons/reload-green.svg');
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.bank-detail-card {
+  border-bottom: solid thin #CBDBDB;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.bank-detail-card__header {
+  height: 72px;
+  display: flex;
+  padding: 0 18px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bank-detail-card__header-top {
+  display: flex;
+  align-items: center;
+}
+
+.bank-detail-card__header-content {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.bank-detail-card__name {
+  margin-bottom: 5px;
+  margin-right: 20px;
+  color: #5C5050;
+  font-size: 18px;
+  font-weight: bold;
+
+  &_flex_1 {
+    flex: 1;
+  }
+}
+
+.bank-detail-card__type {
+  color: #5C5050;
+  font-size: 16px;
+}
+
+.bank-detail-card__labels-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.bank-detail-card__labels {
+  height: 22px;
+  padding: 0 18px;
+  margin-top: 9px;
+  margin-bottom: 14px;
+}
+
+.bank-detail-card__label {
+  display: inline-block;
+  height: 19px;
+  padding-left: 22px;
+  padding-right: 7px;
+  margin-right: 12px;
+
+  font-family: $font-family-labels;
+  font-size: 9px;
+  color: #FFF;
+  text-transform: uppercase;
+  line-height: 19px;
+  background-position: 7px center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+
+  &_type_default {
+    background-color: #43BC69;
+    background-image: url('/assets/images/icons/tick.svg');
+    background-size: 9px 8px;
+  }
+
+  &_type_auto-pay {
+    background-color: #8A6D9D;
+    background-image: url('/assets/images/icons/auto-pay.svg');
+    background-size: 10px 9px;
+  }
+}

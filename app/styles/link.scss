@@ -1,0 +1,10 @@
+.link {
+  color: $action-normal;
+  font-size: 14px;
+  font-weight: normal;
+  cursor: pointer;
+
+  &_weight_bold {
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,13 @@
+.label {
+  display: block;
+  text-transform: uppercase;
+  font-family: $font-family-labels;
+  color: $main-color;
+  cursor: text;
+  user-select: none;
+  font-size: 10px;
+
+  &_color_grey {
+    color: #9B9B9B;
+  }
+}

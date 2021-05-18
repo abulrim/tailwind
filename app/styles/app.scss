@@ -1,0 +1,26 @@
+$main-color: #1297AC;
+$font-family-labels: 'Montserrat', sans-serif;
+$box-header-height: 50px;
+$global--box-padding-left: 13px;
+$action-normal: #1297AC;
+$global--grid-label-height: 33px;
+$grid--padding: 20px;
+$border-color: #C7D7D7;
+$grid--cell-height: 70px;
+
+@import 'normalize';
+@import 'mq';
+@import 'box';
+@import 'billing-info';
+@import 'bank-detail-card';
+@import 'grid';
+@import 'link';
+@import 'label';
+@import 'container';
+@import 'tailwindcss/base.css';
+@import 'tailwindcss/components.css';
+@import 'tailwindcss/utilities.css';
+
+* {
+  font-family: "Source Sans Pro", sans-serif;
+}
